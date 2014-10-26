@@ -1,6 +1,14 @@
 body {
-	margin: 0px;
-	padding: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+.loginBody {
+  background-image: url("IMG_9760smaller.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+  background-width: 100%;
+  background-height: auto;
 }
 .header-container {
 	padding: 0px;
