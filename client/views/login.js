@@ -4,15 +4,15 @@ Template.login.helpers({
 Template.login.events({
     'submit form': function(event) {
         event.preventDefault();
-        var userData = {
+        var data = {
             username: $(event.target).find('[name=username]').val(),
             password: $(event.target).find('[name=password]').val()
         };
-	Meteor.call('login', userData, function(error) {
-            if (error) {
-                error.throw(error);
+	Meteor.loginWithPassword(data.username, data.password, function(err) {
+            if (err) {
+                alert('No good!');
             } else {
-                router.go(dashboard);
+                Router.go('dashboard');
             }
         });
     }
