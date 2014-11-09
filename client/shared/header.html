@@ -13,8 +13,8 @@
         <div class="navbar-collapse collapse">
 	{{#if currentUser}}
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#" title="Personal Settings"><span class="glyphicon glyphicon-cog"></span></a></li>
-            <li><a href="#" title="Log Out" id="logOut"><span class="glyphicon glyphicon-log-out"></span></a></li>
+            <li><a href="{{pathFor 'profile'}}" title="Profile"><span class="glyphicon glyphicon-user"></span> Profile</a></li>
+            <li><a href="#" title="Log Out" id="logOut"><span class="glyphicon glyphicon-log-out"></span> Log Out</a></li>
           </ul>
 	{{/if}}
         </div>
