@@ -3,6 +3,6 @@ Template.dashSideBar.helpers({
 		if (Session.get('activePage') === 'checkInOutPage') return true;
 	},
 	times : function() {
-		if (Session.get('times') === 'checkInOutPage') return true;
+		if (Session.get('activePage') === 'times') return true;
 	}
 });
