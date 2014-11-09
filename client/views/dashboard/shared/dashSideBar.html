@@ -2,7 +2,8 @@
     <div class="col-sm-3 col-md-2 sidebar">
       <ul class="nav nav-sidebar">
         <li class="{{#if checkInOutPage}}active{{/if}}"><a href="{{pathFor 'dashboard'}}"><span class="glyphicon glyphicon-time"></span> Check In/Out</a></li>
-      </ul>
+		<li class="{{#if times}}active{{/if}}"><a href="{{pathFor 'times'}}"><span class="glyphicon glyphicon-calendar"></span> View Times</a></li>
+	</ul>
       <!--ul class="nav nav-sidebar">
         <li><a href="">Nav item</a></li>
         <li><a href="">Nav item again</a></li>
