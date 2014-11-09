@@ -4,7 +4,9 @@ if (Meteor.users.find().count() === 0) {
         'password' : 'adminpass',
         'profile' : {
             'role' : 'admin',
-            'checkedIn' : false
+            'checkedIn' : false,
+            'firstName' : null,
+            'lastName' : null
         }
     });
 };
