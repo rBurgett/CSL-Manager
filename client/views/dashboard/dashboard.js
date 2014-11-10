@@ -13,5 +13,8 @@ Template.dashboard.helpers({
 Template.dashboard.events({
 	'click #checkIn': function() {
 		Meteor.users.update({_id: Meteor.userId()}, {$set: {'profile.checkedIn': true}});
+	},
+	'click #checkOut': function() {
+		Meteor.users.update({_id: Meteor.userId()}, {$set: {'profile.checkedIn': false}});
 	}
 });
