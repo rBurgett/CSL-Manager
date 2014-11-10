@@ -14,7 +14,7 @@ Meteor.methods({
 		log = {
 			status: status,
 			userId: userId,
-			time: time;
+			time: time
 		}
 		TimeLogs.insert(log);
 	}
