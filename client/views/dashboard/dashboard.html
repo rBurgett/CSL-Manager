@@ -4,7 +4,13 @@
 		{{> dashSideBar}}
 		<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 			<h1 class="page-header">Welcome back{{name}}!</h1>
-			<button type="button" class="center-block btn btn-success btn-lg" id="checkIn">Check In</button>
+			<h4>You are currently <strong>{{#if checkedIn}}checked in{{else}}checked out{{/if}}</strong>.
+			<h4 class="text-center"> What would you like to do?</h4>
+			{{#if checkedIn}}
+				<button type="button" class="center-block btn btn-warning btn-lg" id="checkOut">Check Out</button>
+			{{else}}
+				<button type="button" class="center-block btn btn-success btn-lg" id="checkIn">Check In</button>
+			{{/if}}
 		</div>
 		</div>
 	</div>
