@@ -21,6 +21,6 @@ Template.dashboard.events({
 //		Meteor.users.update({_id: Meteor.userId()}, {$set: {'profile.checkedIn': false}});
 		Meteor.call('checkInOut', Meteor.userId(), function(error) {
 			
-		}
+		});
 	}
 });
