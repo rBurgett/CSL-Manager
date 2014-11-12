@@ -26,16 +26,21 @@
 								<h3 class="panel-title">Your Recent Activity</h3>
 							</div>
 							<div class="panel-body">
-								<table class="table">
-									<tr>
-										<th>Status</th>
-										<th>Date</th>
-										<th>Time</th>
-									</tr>
-									{{#each log}}
-										{{> userLogs}}
-									{{/each}}
+								<table class="table table-condensed">
+									<thead>
+										<tr>
+											<th>Status</th>
+											<th>Date</th>
+											<th>Time</th>
+										</tr>
+									</thead>
+									<tbody>
+										{{#each log}}
+											{{> userLogs}}
+										{{/each}}
+									</tbody>
 								</table>
+								<p class="text-center"><a href="{{pathFor 'times'}}">View More</a></p>
 							</div>
 						</div>
 					</div>

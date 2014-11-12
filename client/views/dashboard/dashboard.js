@@ -10,7 +10,7 @@ Template.dashboard.helpers({
 		}
 	},
 	log: function() {
-		return TimeLogs.find({userId: Meteor.userId()});
+		return TimeLogs.find({userId: Meteor.userId()}, {sort: {time: -1}, limit: 10});
 	}
 });
 Template.dashboard.events({

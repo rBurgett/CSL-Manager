@@ -10,5 +10,9 @@ Template.userLogs.helpers({
 	colorClass: function() {
 		if (this.status === 'in') {return 'success';}
 		else {return 'danger';}
+	},
+	backgroundColor: function() {
+		if (this.status === 'in') {return 'green';}
+		else {return 'red';}
 	}
 });
