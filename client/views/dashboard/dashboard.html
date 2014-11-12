@@ -11,6 +11,35 @@
 				{{else}}
 					<button type="button" class="center-block btn btn-success btn-lg check-in-out margin-top-50" id="checkIn">Check In</button>
 				{{/if}}
+				<div class="row margin-top-50">
+					<div class="col-lg-6">
+						<ul class="list-group">
+							<li class="list-group-item list-group-item-success" style="color:#000000;"><strong>Volunteers Currently Checked In</strong></li>
+							<li class="list-group-item list-group-item">Ryan Burgett</li>
+							<li class="list-group-item list-group-item">Sam Claudio</li>
+							<li class="list-group-item list-group-item">Tammy Claudio</li>
+						</ul>
+					</div>
+					<div class="col-lg-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Your Recent Activity</h3>
+							</div>
+							<div class="panel-body">
+								<table class="table">
+									<tr>
+										<th>Status</th>
+										<th>Date</th>
+										<th>Time</th>
+									</tr>
+									{{#each log}}
+										{{> userLogs}}
+									{{/each}}
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

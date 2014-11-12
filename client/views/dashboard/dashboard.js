@@ -8,6 +8,9 @@ Template.dashboard.helpers({
 		} else {
 			return false;
 		}
+	},
+	log: function() {
+		return TimeLogs.find({userId: Meteor.userId()});
 	}
 });
 Template.dashboard.events({
