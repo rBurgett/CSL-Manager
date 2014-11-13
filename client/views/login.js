@@ -10,7 +10,7 @@ Template.login.events({
         };
 	Meteor.loginWithPassword(data.username, data.password, function(err) {
             if (err) {
-                alert('No good!');
+                alert('That is not a valid username or password.');
             } else {
                 Router.go('dashboard');
             }
