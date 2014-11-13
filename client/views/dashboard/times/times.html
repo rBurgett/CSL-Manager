@@ -18,7 +18,9 @@
 					{{/each}}
 				</tbody>
 			</table>
-			<p class="text-center"><a href="#" id="viewMoreLogs">View More</a></p>
+			{{#if more}}
+				<p class="text-center"><a href="#" id="loadMoreLogs">Load More</a></p>
+			{{/if}}
 		</div>
 		</div>
 	</div>
