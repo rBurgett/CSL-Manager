@@ -4,6 +4,21 @@
 		{{> dashSideBar}}
 		<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 			<h1 class="page-header">View Times.</h1>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Status</th>
+						<th>Date</th>
+						<th>Time</th>
+					</tr>
+				</thead>
+				<tbody>
+					{{#each log}}
+						{{> userLogs}}
+					{{/each}}
+				</tbody>
+			</table>
+			<p class="text-center"><a href="#" id="viewMoreLogs">View More</a></p>
 		</div>
 		</div>
 	</div>
