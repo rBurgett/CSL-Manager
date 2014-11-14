@@ -4,5 +4,8 @@ Template.dashSideBar.helpers({
 	},
 	times : function() {
 		if (Session.get('activePage') === 'times') return true;
+	},
+	addNewUserPage : function() {
+		if (Session.get('activePage') === 'addNewUserPage') return true;
 	}
 });

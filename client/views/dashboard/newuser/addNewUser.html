@@ -1,0 +1,166 @@
+<template name="addNewUser">
+	<div class="container-fluid">
+		<div class="row">
+			{{> dashSideBar}}
+			<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+				<h1 class="page-header">Add New User</h1>
+				<form role="form">
+					<div class="row">
+						<div class="form-group col-lg-3">
+							<label for="first-name">First Name</label>
+							<input name="firstName" type="text" class="form-control" id="first-name" placeholder="Enter first name" autofocus>
+						</div>
+						<div class="form-group col-lg-3">
+							<label for="last-name">Last Name</label>
+							<input name="lastName" type="text" class="form-control" id="last-name" placeholder="Enter last name">
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-lg-5">
+							<label for="street">Street Address</label>
+							<input name="street" type="text" class="form-control" id="street" placeholder="Enter street address">
+						</div>
+					</div>
+					<div class="row">						
+						<div class="form-group col-lg-2">
+							<label for="city">City</label>
+							<input name="city" type="text" class="form-control" id="city" placeholder="City">
+						</div>
+						<div class="form-group col-lg-1">
+							<label for="state">State</label>
+							<input name="state" type="text" class="form-control" id="state" placeholder="State">
+						</div>
+						<div class="form-group col-lg-2">
+							<label for="zip-code">Zip</label>
+							<input name="zipCode" type="text" class="form-control" id="zip-code" placeholder="Zip">
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-lg-2">
+							<label for="phone">Phone</label>
+							<input name="phone" type="tel" class="form-control" id="phone" placeholder="XXX-XXX-XXXX">
+						</div>
+						<div class="form-group col-lg-4">
+							<label for="email-address">Email address</label>
+							<input name="email" type="email" class="form-control" id="email-address" placeholder="Enter email">
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-lg-2">
+							<label for="birthdate">Date of Birth</label>
+							<input name="birthdate" type="text" class="form-control" id="birthdate" placeholder="MM/DD/YYYY">
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-lg-2">
+							<label>Gender</label>
+							<div class="radio">
+								<label>
+									<input type="radio" name="gender" id="gender" value="female">
+									Female
+								</label>
+							</div>
+							<div class="radio">
+								<label>
+									<input type="radio" name="gender" id="gender" value="male">
+									Male
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-lg-4">
+							<label>Education</label>
+							<div class="radio">
+								<label>
+									<input type="radio" name="education" id="optionsRadios1" value="highSchool">
+									High School
+								</label>
+							</div>
+							<div class="radio">
+								<label>
+									<input type="radio" name="education" id="optionsRadios1" value="highSchool">
+									Some College
+								</label>
+							</div>
+							<div class="radio">
+								<label>
+									<input type="radio" name="education" id="optionsRadios1" value="highSchool">
+									College Graduate
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-lg-4">
+							<label for="degrees">Degree?</label>
+							<input name="degrees" type="text" class="form-control" id="degrees" placeholder="Enter any college degrees">
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-lg-6">
+							<label for="skills">Skills</label>
+							<input name="skills" type="text" class="form-control" id="skills" placeholder="Enter any particular skills you have">
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-lg-6">
+							<label for="languages">Language(s)</label>
+							<input name="languages" type="text" class="form-control" id="languages" placeholder="Enter any languages you speak">
+						</div>
+					</div>
+					<h3>Emergency Contact 1</h3>
+					<div class="row">						
+						<div class="form-group col-lg-3">
+							<label for="emergencyName1">Name</label>
+							<input name="emergencyName1" type="text" class="form-control" id="emergencyName1" placeholder="Name">
+						</div>
+						<div class="form-group col-lg-2">
+							<label for="emergencyPhone1">Phone</label>
+							<input name="emergencyPhone1" type="tel" class="form-control" id="emergencyPhone1" placeholder="XXX-XXX-XXXX">
+						</div>
+						<div class="form-group col-lg-2">
+							<label for="emergencyRelation1">Relation</label>
+							<input name="emergencyRelation1" type="text" class="form-control" id="emergencyRelation1" placeholder="Relation">
+						</div>
+					</div>
+					<h3>Emergency Contact 2</h3>
+					<div class="row">						
+						<div class="form-group col-lg-3">
+							<label for="emergencyName2">Name</label>
+							<input name="emergencyName2" type="text" class="form-control" id="emergencyName2" placeholder="Name">
+						</div>
+						<div class="form-group col-lg-2">
+							<label for="emergencyPhone2">Phone</label>
+							<input name="emergencyPhone2" type="tel" class="form-control" id="emergencyPhone2" placeholder="XXX-XXX-XXXX">
+						</div>
+						<div class="form-group col-lg-2">
+							<label for="emergencyRelation2">Relation</label>
+							<input name="emergencyRelation2" type="text" class="form-control" id="emergencyRelation2" placeholder="Relation">
+						</div>
+					</div>
+					<h3>Login Setup</h3>
+					<div class="row">
+						<div class="form-group col-lg-3">
+							<label for="username">Username</label>
+							<input name="username" type="text" class="form-control" id="username" placeholder="Enter desired username">
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-lg-3">
+							<label for="password">Password</label>
+							<input name="password" type="password" class="form-control" id="password" placeholder="Enter password">
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-lg-3">
+							<label for="passwordRepeat">Repeat Password</label>
+							<input name="passwordRepeat" type="password" class="form-control" id="passwordRepeat" placeholder="Repeat password">
+						</div>
+					</div>
+					<button type="submit" class="btn btn-default">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</template>
