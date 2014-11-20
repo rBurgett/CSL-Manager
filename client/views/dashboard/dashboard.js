@@ -11,6 +11,9 @@ Template.dashboard.helpers({
 	},
 	log: function() {
 		return TimeLogs.find({userId: Meteor.userId()}, {sort: {time: -1}, limit: 10});
+	},
+	checkedInUsers: function() {
+		return Meteor.users.find();
 	}
 });
 Template.dashboard.events({

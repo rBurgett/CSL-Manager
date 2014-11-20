@@ -1,0 +1,12 @@
+<template name="checkedInUserList">
+	<ul class="list-group">
+		<li class="list-group-item list-group-item-success" style="color:#000000;"><strong>Volunteers Currently Checked In</strong></li>
+		{{#if checkedInUsers}}
+			{{#each checkedInUsers}}
+				{{> checkedInUserItem}}
+			{{/each}}
+		{{else}}
+			<li class="list-group-item list-group-item">none</li>
+		{{/if}}
+	</ul>
+</template>
