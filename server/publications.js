@@ -13,7 +13,7 @@ Meteor.publish('checkedInUsers', function() {
 		'profile.emergencyPhone2': true,
 		'profile.emergencyRelation2': true,
 		'profile.checkedIn': true
-		}});
+	}});
 });
 Meteor.publish('timeLogs', function() {
 	return TimeLogs.find();
