@@ -1,4 +1,15 @@
 <template name="layout">
-  {{> header}}
-  {{> yield}}
+	{{> header}}
+	{{#if currentUser}}
+		<div class="container-fluid">
+			<div class="row">
+				{{> dashSideBar}}
+				<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+					{{> yield}}
+				</div>
+			</div>
+		</div>
+	{{else}}
+		{{> yield}}
+	{{/if}}
 </template>

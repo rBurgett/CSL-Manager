@@ -1,8 +1,4 @@
 <template name="dashboard">
-	<div class="container-fluid">
-		<div class="row">
-			{{> dashSideBar}}
-			<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 				<h1 class="page-header">Welcome back{{name}}!</h1>
 				<h4>You are currently <strong>{{#if checkedIn}}checked in{{else}}checked out{{/if}}</strong>.</h4>
 				<h2 class="text-center margin-top-50"> What would you like to do?</h2>
@@ -40,7 +36,4 @@
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-	</div>
 </template>
